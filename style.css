@@ -1,0 +1,126 @@
+/* RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* VARIABLES */
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --gayish-blue: hsl(218, 22%, 67%);
+}
+
+/* BASE */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  background-color: var(--light-gray);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.card {
+  color: var(--gayish-blue);
+  margin: 2rem;
+  max-width: 500px;
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card__community {
+  display: grid;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+  padding: 1.5rem;
+}
+
+.card__title {
+  color: var(--cyan);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card__sub-heading {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.yellow-text {
+  color: var(--bright-yellow);
+}
+
+.card__subscription {
+  background-color: var(--cyan);
+  color: var(--light-gray);
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.card__pricing {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card__price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.period {
+  color: var(--gayish-blue);
+}
+
+.button {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--bright-yellow);
+  color: var(--light-gray);
+  font-weight: 700;
+  border: 0;
+}
+
+.card__packages {
+  padding: 1.5rem;
+  background-color: hsl(179, 62%, 55%);
+  color: var(--light-gray);
+  display: grid;
+  gap: 1.2rem;
+}
+
+ol {
+  list-style-type: none;
+}
+
+li {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+@media (min-width: 600px) {
+  .card {
+    margin: 2rem auto;
+  }
+
+  .card__split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
